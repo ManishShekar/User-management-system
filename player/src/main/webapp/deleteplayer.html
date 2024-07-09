@@ -1,0 +1,32 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head><META http-equiv="Content-Type" content="text/html; charset=utf-8"><style>body{font-family:Arial,sans-serif;background-color:#f5f5f5;margin:0;padding:0}.m_container{max-width:400px;margin:50px auto;padding:20px;background-color:#fff;border-radius:4px}h1{text-align:center;color:#4285f4;margin-bottom:30px}.m_form-group{margin-bottom:20px}label{display:block;margin-bottom:5px;color:#555;font-weight:bold}.m_input-error{border-color:#ff5722}.m_error-message{color:#ff5722;font-size:14px;margin-top:5px}.m_success-message{color:#4caf50;font-size:14px;margin-top:5px}.m_btn-container{text-align:center;margin-top:20px}.m_btn{display:inline-block;padding:12px 24px;font-size:16px;font-weight:bold;color:#fff;background-color:#4285f4;border:none;border-radius:4px}.m_btn:hover{background-color:#3367d6}</style>
+    <script>
+        function showConfirmation() {
+            var result = window.confirm("Are you sure you want to proceed?");
+        }
+    </script>
+    </head><body> <u></u>
+
+
+	
+	
+	
+	
+
+<div>
+	<div class="m_container"> 
+		<h1>Delete Users</h1>
+		<form method="post" action="deleteplayer" id="m_signup-form" target="_blank">
+			<div class="m_form-group">
+				<label for="m_email">ID:</label>
+				<input type="number" id="m_email" name="id">
+				<div class="m_error-message" id="m_email-error"></div>
+			</div>
+			<div class="m_btn-container">
+				<button onclick="showConfirmation()" type="submit"  class="m_btn">Delete</button>
+			</div>
+			<div class="m_success-message" id="m_success-message"></div>
+		</form>
+	</div>
+
+	</div></body></html>
