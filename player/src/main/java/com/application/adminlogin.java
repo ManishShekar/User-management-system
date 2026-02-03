@@ -1,5 +1,5 @@
 package com.application;
-
+import java.util.Objects;
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -26,7 +26,7 @@ public class adminlogin extends HttpServlet {
 		
 		PrintWriter out = res.getWriter();
 		
-		if(password.equals(pass)) {
+		if (Objects.equals(password, pass)) {
 			res.sendRedirect("adminhomepage.html");
 		}
 		else {
