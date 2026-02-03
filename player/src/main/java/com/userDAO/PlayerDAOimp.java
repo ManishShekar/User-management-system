@@ -75,7 +75,7 @@ public class PlayerDAOimp implements PlayerDAO {
 		try {
 			PreparedStatement pstm = con.prepareStatement(DELETE_QUERY);
 			pstm.setInt(1,id );
-			pstm.executeUpdate();
+				return pstm.executeUpdate();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
