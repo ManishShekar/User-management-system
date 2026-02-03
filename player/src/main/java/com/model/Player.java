@@ -42,7 +42,7 @@ public class Player {
 	}
 	@Override
 	public String toString() {
-		return "Player [name=" + name + ", email=" + email + ", password=" + password + ", phoneno=" + phoneno + "]";
+			return "Player [name=" + name + ", email=" + email + ", phoneno=" + phoneno + "]";
 	}
 	public String getPassword() {
 		return password;
