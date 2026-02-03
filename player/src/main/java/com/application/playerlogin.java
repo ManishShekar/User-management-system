@@ -2,7 +2,7 @@ package com.application;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-
+import java.util.Objects;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -29,10 +29,7 @@ public class playerlogin extends HttpServlet {
 		String pass = dao.pass(username);
 		
 		PrintWriter out = res.getWriter();
-		System.out.println(password);
-		System.out.println(pass);
-		
-		if(password.equals(pass)) {
+		if (Objects.equals(password, pass)) {
 			
 			HttpSession session = req.getSession();
 			session.setAttribute("email", username);
